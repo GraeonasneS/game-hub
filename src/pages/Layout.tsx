@@ -1,12 +1,14 @@
+import { Box } from "@chakra-ui/react";
 import NavBar from "../components/NavBar";
 import { Outlet } from "react-router-dom";
 
 const Layout = () => {
-  throw new Error("Page not Found");
   return (
     <>
       <NavBar />
-      <Outlet />
+      <Box padding={5}>
+        <Outlet />
+      </Box>
     </>
   );
 };
